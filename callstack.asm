@@ -134,7 +134,7 @@ getExponent:
 	SEC ;set carry bit to 1
 	SBC #$7F
 
-	return:
+return:
 		STA $0103, X ;put real return value onto the stack
 		LDA $0103, X ;load the A register with that value from the stack
 
