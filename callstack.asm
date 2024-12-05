@@ -134,6 +134,8 @@ getExponent:
 	SEC ;set carry bit to 1
 	SBC #$7F
 
+;labels must be in the leftmost column relative to all the code
+;other code can be indented
 return:
 		STA $0103, X ;put real return value onto the stack
 		LDA $0103, X ;load the A register with that value from the stack
